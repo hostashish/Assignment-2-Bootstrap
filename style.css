@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 480px;
+    background-image: url('images/shutterstock_348320018.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.inner-container{
+    height: 480px;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;
+}
+.navigation{
+ position: relative;
+ top: 20px;
+}
+
+.navigation > a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 8px;
+}
+
+.logo-text{
+    text-decoration: none;
+    font: normal normal 600 70px/106px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    background: #ffffff;
+    width: 120px;
+    height: 120px;
+}
+
+input.form-control {
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0;
+}
+
+h2.quick-search-title {
+    font: normal normal bold 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+}
+
+span.quick-search-second-title {
+    font: normal normal normal 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+}
+
+img.quick-search-image {
+    width: 160px;
+    height: 160px;
+}
+
+h3.dish-title {
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+}
+
+p.dish-discription {
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+}
+
+h5#loginModalLabel, h5#signUpModalLabel {
+    font: normal normal 600 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+}
+
+button.btn.border.border-1.btn-text {
+    color: #192F60;
+}
+
+button.btn-close{
+    color: #192F60;
+}
+
+p.modal-footer-text {
+    font: normal normal normal 16px/25px Poppins;
+    color: #192F60;
+}
+
+span.sign-up {
+    font: normal normal normal 16px/25px Poppins;
+    color: #CE0505;
+
+}

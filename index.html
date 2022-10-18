@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment - 2 - HTML, CSS, Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@master/dist/latest/bootstrap-autocomplete.min.js"></script>
+  </head>
+  <body>
+    <header class="container bg-image g-0">
+      <div class="container-fluid inner-container">
+        <div class="row">
+          <div class="col">
+            <div class="navigation d-flex justify-content-end gap-3">
+              <a href="#" class="d-sm-none d-md-block" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              <button class="btn btn-outline-light d-sm-none d-md-block" data-bs-toggle="modal" data-bs-target="#signUpModal">Create an account</button>
+            </div>
+
+            <!-- Login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border border-bottom-0">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pt-2 pb-5 mb-5">
+                    <div class="d-grid gap-3">
+                      <button type="submit" class="btn border border-1 btn-text"><img class="px-2 py-1" src="images/001-gmail.png"/> Continue with Gmail</button>
+                      <button type="submit" class="btn border border-1 btn-text"><img class="px-2 py-1" src="images/001-facebook.png"/> Continue with Facebook</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-0 flex-column justify-content-center px-3">
+                    <hr class="w-75">
+                    <p class="modal-footer-text">Don’t have account? <span class="sign-up" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Login Modal-->
+
+            <!-- Sign Up Modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header border border-bottom-0">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body pt-2 pb-5 mb-5">
+                    <div class="d-grid gap-3">
+                      <button type="submit" class="btn border border-1 btn-text"><img class="px-2 py-1" src="images/001-gmail.png"/> Continue with Gmail</button>
+                      <button type="submit" class="btn border border-1 btn-text"><img class="px-2 py-1" src="images/001-facebook.png"/> Continue with Facebook</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-0 flex-column justify-content-center px-3">
+                    <hr class="w-75">
+                    <p class="modal-footer-text">Already have an account? <span class="sign-up" data-bs-toggle="modal" data-bs-target="#loginModal">Login</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Login Modal-->
+
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center flex-column d-flex align-items-center">
+            <p class="logo-text rounded-circle py-2">e!</p>
+            <h1 class="text-white">Find the best restaurants, cafés, and bars</h1>
+          </div>
+          <div class="col-md-8 offset-md-2 offset-sm-0 col-sm-12">
+            <div class="form">
+              <div class="row gy-2">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Please type a location" aria-label="Please type a location">
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" placeholder="Search for restaurants" aria-label="Search for restaurants">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="quick-search-title">Quick Searches</h2>
+            <span class="quick-search-second-title">Discover restaurants by type of meal</span>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_1154073754.png" alt="Breakfast">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Breakfast</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_1130181932.png" alt="Lunch">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Lunch</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_351721442.png" alt="Snacks">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Snacks</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_476864884.png" alt="Dinner">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Dinner</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_305270834.png" alt="Drinks">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Drinks</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex align-items-center shadow bg-body mb-4">
+              <div class="flex-shrink-0">
+                <img class="quick-search-image" src="images/shutterstock_1304064250.png" alt="Nightlife">
+              </div>
+              <div class="flex-grow-1 ms-3">
+                <h3 class="dish-title">Nightlife</h3>
+                <p class="dish-discription">Start your day with exclusive breakfast options</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
